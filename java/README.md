@@ -122,7 +122,7 @@ Factory.Payment.FaceToFace()
 ```java
 Factory.Payment.FaceToFace()
     // 调用asyncNotify扩展方法，可以为每此API调用，设置独立的异步通知地址
-    // 此处设置的异步通知地址的优先级低于全局Config中配置的异步通知地址
+    // 此处设置的异步通知地址的优先级高于全局Config中配置的异步通知地址
     .asyncNotify("https://www.test.com/callback")
     .preCreate("Apple iPhone11 128G", "2234567890", "5799.00");
 ```
